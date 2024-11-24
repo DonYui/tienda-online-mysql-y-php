@@ -1,0 +1,324 @@
+/* Reseteo básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #a23a1a;  
+    zoom: 0.9;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+    background: url('https://via.placeholder.com/') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: #2c2525;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Sección Productos */
+.productos {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.grid-productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.producto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Estilo para el contenedor del logo y el nombre de la tienda */
+.logo {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    max-width: 80px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene las proporciones */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Estilo para el nombre de la tienda */
+.logo h1 {
+    font-size: 1.5rem; /* Tamaño del texto del nombre de la tienda */
+    color: #fff; /* Color del texto */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+/* Usando Flexbox para el header */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye logo + nombre y menú en los extremos */
+    align-items: center; /* Centra verticalmente */
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo del menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    text-align: left;
+}
+
+.modal img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #666;
+}
+
+/* Sección de Categorías */
+.categorias {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias ul li {
+    display: inline-block;
+    margin-right: 30px; /* Aumenta el espacio horizontal entre los elementos */
+    margin-bottom: 20px; /* Aumenta el espacio vertical en caso de que haya más filas */
+    font-size: 1.2rem;
+}
+
+.categorias ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.categorias ul li a:hover {
+    background-color: #aaa;
+}
+/* Carrito en el header */
+.carrito {
+    position: relative;
+    display: inline-block;
+}
+
+.carrito a {
+    color: rgb(193, 88, 65);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+/* Modal del carrito */
+#carritoModal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#carritoModal .modal-content {
+    background-color: #fafafa;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 70%;
+    max-width: 600px;
+    position: relative;
+}
+
+#carritoModal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#listaCarrito {
+    margin-bottom: 20px;
+}
+
